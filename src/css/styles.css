@@ -1,0 +1,92 @@
+body {
+  background-image: linear-gradient(to right, #040503, #e639da);
+}
+
+select {
+  margin: 20px;
+  border: 0;
+  font-family: sans-serif;
+  width: 300px;
+  height: 50px;
+  padding: 0 0px 0 18px;
+  background: #d99be0;
+  color: rgb(6, 6, 6);
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 1;
+}
+
+.breed-select:hover {
+  opacity: 0.8;
+}
+
+option {
+  color: inherit;
+  background-color: #d99be0;
+}
+
+
+.cat-image {
+  height: 450px;
+  margin: 10px;
+  border-radius: 2%;
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
+}
+
+.loader {
+  margin: 30px;
+  color: #faf7f7;
+  font-size: 45px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  transform: translateZ(0);
+  animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+.breed-name {
+  font-family: sans-serif;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f9f6f6;
+}
+
+.error {
+  margin: 15px;
+  color: #040404;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.6;
+  letter-spacing: 0.8;
+}
+
+.description {
+  color: #fcfafa;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  letter-spacing: 0.8;
+}
+
+.temperament {
+  color: #faf9f9;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.6;
+  letter-spacing: 0.8;
+}
+
+
+.inform-container {
+  max-width: 500px;
+  margin: 25px;
+}

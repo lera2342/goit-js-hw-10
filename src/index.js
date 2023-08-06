@@ -33,7 +33,7 @@ breedSelect.addEventListener('change', () => {
 fetchBreeds()
   .then(breeds => {
     breedsSelect(breeds);
-    hideLoader();
+    // hideLoader();
   })
   .catch(error => {
         console.error('Error fetching cat:', error);
@@ -43,7 +43,7 @@ fetchBreeds()
       });
 
 
-showLoader();
+// showLoader();
 
 function hideLoader() {
   breedSelect.style.display = 'block';
@@ -58,7 +58,7 @@ function showLoader() {
   error.style.display = 'none';
   catInfo.style.display = 'none';
   breedSelect.style.display = 'none';
-  isLoading = true;
+  // isLoading = true;
 }
 
 function breedsSelect(breeds) {

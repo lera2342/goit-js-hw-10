@@ -21,7 +21,7 @@ breedSelect.addEventListener('change', () => {
         hideLoader();
       })
       .catch(error => {
-        console.error('Error fetching cat:', error);
+        console.warn('Error fetching cat:', error);
           alert('Error',
           'Oops! Something went wrong! Try reloading the page!',
           )

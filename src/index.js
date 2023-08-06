@@ -9,12 +9,12 @@ const catInfo = document.querySelector('.cat-info');
 breedSelect.addEventListener('change', () => {
 
   const selectedBreedId = breedSelect.value;
-  
+
   let isLoading = false;
-  
+
   if (selectedBreedId) {
     showLoader();
-  
+
     fetchCatByBreed(selectedBreedId)
       .then(catData => {
         updateCatInfo(catData);
@@ -22,9 +22,9 @@ breedSelect.addEventListener('change', () => {
       })
       .catch(error => {
         console.warn('Error fetching cat:', error);
-          alert('Error',
+        alert('Error',
           'Oops! Something went wrong! Try reloading the page!',
-          )
+        )
       });
   }
 });
@@ -36,11 +36,11 @@ fetchBreeds()
     // hideLoader();
   })
   .catch(error => {
-        console.error('Error fetching cat:', error);
-          alert('Error',
-          'Oops! Something went wrong! Try reloading the page!',
-          )
-      });
+    console.error('Error fetching cat:', error);
+    alert('Error',
+      'Oops! Something went wrong! Try reloading the page!',
+    )
+  });
 
 
 // showLoader();
@@ -48,7 +48,7 @@ fetchBreeds()
 function hideLoader() {
   breedSelect.style.display = 'block';
   loader.style.display = 'none';
-  isLoading = false;
+  // isLoading = false;
 }
 
 error.style.display = 'none';

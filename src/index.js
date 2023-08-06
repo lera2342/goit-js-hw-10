@@ -35,12 +35,12 @@ fetchBreeds()
     breedsSelect(breeds);
     // hideLoader();
   })
-  // .catch(error => {
-  //   console.error('Error fetching cat:', error);
-  //   alert('Error',
-  //     'Oops! Something went wrong! Try reloading the page!',
-  //   )
-  // });
+  .catch(error => {
+    console.error('Error fetching cat:', error);
+    alert('Error',
+      'Oops! Something went wrong! Try reloading the page!',
+    )
+  });
 
 
 // showLoader();
